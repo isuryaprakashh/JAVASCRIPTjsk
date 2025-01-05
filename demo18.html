@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array[],for-of,in,forEach</title>
+    <script>
+       // array or list 
+       let products = ["MOBILE","LAPTOP","WATCH","SAREE"]     //[] is used for array or list
+       document.writeln(typeof products+"<br>")
+       document.writeln(products.length+"<br>")
+       document.writeln(products[3]+"<br>")
+       document.writeln(products[9]+"<hr>")   //undefined
+ 
+           //for loop
+           //array index start from 0 to length-1
+       for(i = 0 ; i < products.length ; i++)
+       {
+        document.writeln(products[i]+"<br>")
+       }
+
+      document.writeln("<hr>")
+
+       //for of loop
+       for(let p of products)    //of gives value
+       {
+        document.writeln( p + "<br>")    
+       }
+
+       document.writeln("<hr>")
+
+
+       //for in loop
+
+       for(let p in products)     //in gives index
+       {
+        document.writeln(p+"<br>")
+       }
+
+       document.writeln("<hr>")
+
+
+       let numbers = [10,20,30,40,50.5]    
+
+      
+       for(let value of numbers)
+       {
+        document.writeln(value+"<br>")
+       }
+       
+       //sum of array
+       let sum = 0;
+       for(let value of numbers)
+       {
+        sum+=value
+       }
+       document.writeln("sum="+sum)
+
+       document.writeln("<hr>")
+
+      //forEach
+       products.forEach( (p) => {
+        document.writeln(p+"<br>")
+       })
+
+       document.writeln("<hr>")
+
+       numbers.forEach( (v) => {
+        document.writeln(v+"<br>")
+       })
+    
+       //two arguments value,index forEach
+       products.forEach( (v,i) => {
+        document.writeln(i+ ":" +v+"<br>")
+       })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

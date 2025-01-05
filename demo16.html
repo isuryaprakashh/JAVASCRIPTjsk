@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+    <script>
+       // arrow funcntion or anonymous function or sometimes called lambda function
+
+       let test1 = () => document.writeln("FSAD <br>")  //br is break
+
+       let test2 = () => {
+        document.writeln("KLEF <br>")
+        document.writeln("KLUNIVERSITY <br>")
+       }
+
+       let test3 = (name) => document.writeln(name+"<br>")
+
+       let test4 = (a,b) => {
+        document.writeln("output="+(a+b)+"<br>") //sum
+        }
+
+        let test5 = (a,b) => { return a+b
+        }    // use {} when you use return statement
+
+
+
+       test1() //function call
+       test2()
+       test3("surya")
+       test4(2,4)
+       document.writeln(test5(2,50000))    // we used document.writeln() here as we are returning
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

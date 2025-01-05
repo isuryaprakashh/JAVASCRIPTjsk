@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>callback</title>
+
+    <script>
+        //callback - passing function as argument
+        
+        const display = () => document.writeln("Display Function<br>")
+        
+        //we can use display as argument instead of callback
+        const demo = (a,b,callback) => {
+            document.writeln("Demo Function<br>")
+            document.writeln((a+b)+"<br>")
+            callback()
+        }
+
+        demo(10,20,display)  //display as callback (function arg)
+
+document.writeln("<hr>")
+
+        const stName = (name) => document.writeln("hello" + name)
+        const student = (callback,stId) =>{
+            callback()
+            document.writeln(stId)
+        }
+        student(stName("surya"),30929)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
