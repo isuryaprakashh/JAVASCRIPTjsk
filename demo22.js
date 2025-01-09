@@ -1,6 +1,6 @@
 //back tick ``
-let name = "klu"
-console.log(`my name is  ${name}`)
+let myName = "klu"
+console.log(`my name is  ${myName}`)
 
 //spread operator (...) - make the array/object as iterable
 let arr1 = [10,20,30]
@@ -17,7 +17,7 @@ const numbers = [10,20]
 const updated = [...numbers,30,40] //updating
 console.log(updated)
 
-//destructinng assignment 
+//destructuring assignment 
 const courses = ["OS","FSAD","DBMS"]
 const [a,b,c] = courses
 console.log(a)
