@@ -24,6 +24,11 @@ console.log(a)
 console.log(b)
 console.log(c)
 
+
 const [p,,r] = courses
 console.log(p)
 console.log(r)
+
+const [i,j]= courses
+console.log(i)
+console.log(j)

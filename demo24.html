@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+    function display()
+    {
+       let name =  document.getElementById("txt").value
+      // alert(name)
+      document.getElementById("demo").innerHTML=name
+    }
+
+    
+    </script>
+</head>
+<body>
+    Enter Name <input type="text" id="txt"/>               <br>
+    <button onclick="display()">CLick Here</button>        <br>
+    <i id="demo"></i>
+</body>
+</html>
