@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        class Employee
+        {
+            //properties
+            id = 101
+            name = "surya"
+
+            //method
+             display()
+            {
+                document.writeln("ID:"+this.id+"<br>")
+                document.writeln(`name: ${this.name} <br>`)
+            }
+
+        }
+        let emp = new Employee() //emp is object
+        document.writeln(emp.id+"<br>")
+        document.writeln(`${emp.name}<br>`)
+        emp.display()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

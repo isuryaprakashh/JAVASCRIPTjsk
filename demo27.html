@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+
+     let arr = [10,20,30,40,50]    //number array
+     
+     arr.map( (v,i)=>{
+        document.writeln(`${i}:${v}<br>`)
+     } )
+
+     let courses = ['OS','FSAD','MSWD']   //string array
+
+     courses.map( (v,i)=>{
+        document.writeln(`${i}:${v}<br>`)
+     } )
+
+
+     document.writeln(`<hr> <h3>object with map</h3>`)
+
+     let obj = {id:101,name:"klu",location:"guntur"}
+     // entries contains both keys and values
+     // Each Iteration will return an Array of key & value
+     Object.entries(obj).map( ([k,v]) =>{
+      document.writeln(`${k}:${v} <br>`)
+     })
+     // Object.keys() and Object.values()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

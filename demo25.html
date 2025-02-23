@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+
+ // map object
+        let obj = new Map()
+        obj.set("id",101)
+        obj.set("name","klu")
+        obj.set("age",30.5)
+        obj.set("name","klef") //name is duplicate key    
+        // if you take duplicate key the value will be updated so in the above there are 3 keys
+       
+        document.writeln(typeof obj+"<br>")
+        document.writeln(obj.size+"<br>")
+        
+        document.writeln(obj.get("name")+"<br>")             //get() is used to retrive the value of a  patrticular key
+        document.writeln(obj.get("gender")+"<br>")   //output is undefined as there is nno key called gender
+
+        document.writeln(obj.has("name")+"<br>")
+        document.writeln(obj.has("location")+"<br>")               //has() is used to find if the key is present or not
+
+        obj.forEach( (v,k) =>
+        {
+            document.writeln(`${k}:${v}<br>`)
+        })
+
+        document.writeln(obj.delete("age")+"<br>")
+        document.writeln(obj.delete("size")+"<br>")
+
+        document.writeln(obj.size+"<br>")
+        
+        obj.clear()
+
+        document.writeln(obj.size+"<br>")
+
+        obj.set("location","hyderabad")
+
+        obj.clear()
+
+        document.writeln(obj.size+"<br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
